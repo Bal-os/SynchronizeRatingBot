@@ -1,7 +1,6 @@
 package balashov.os.synchronizeratingbot.core.channel.common.ports.entities;
 
 import lombok.Builder;
-import lombok.Getter;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -12,4 +11,5 @@ public record MessageDto(MessageId id,
                          UserDto sender,
                          ChatDto chat,
                          String text,
-                         LocalDate localDate) {}
+                         LocalDate localDate) {
+}

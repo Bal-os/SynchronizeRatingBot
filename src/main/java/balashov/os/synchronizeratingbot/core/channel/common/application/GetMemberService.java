@@ -1,10 +1,10 @@
 package balashov.os.synchronizeratingbot.core.channel.common.application;
 
+import balashov.os.synchronizeratingbot.core.channel.common.ports.entities.ChatDto;
 import balashov.os.synchronizeratingbot.core.channel.common.ports.entities.MemberDto;
+import balashov.os.synchronizeratingbot.core.channel.common.ports.entities.UserDto;
 import balashov.os.synchronizeratingbot.core.channel.common.ports.repository.SaveMemberRepository;
 import balashov.os.synchronizeratingbot.core.channel.common.ports.usecases.GetMember;
-import balashov.os.synchronizeratingbot.core.channel.common.ports.entities.ChatDto;
-import balashov.os.synchronizeratingbot.core.channel.common.ports.entities.UserDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

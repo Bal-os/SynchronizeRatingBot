@@ -1,8 +1,8 @@
 package balashov.os.synchronizeratingbot.core.channel.common.application;
 
 import balashov.os.synchronizeratingbot.core.channel.common.ports.entities.UserDto;
-import balashov.os.synchronizeratingbot.core.channel.common.ports.usecases.GetUserById;
 import balashov.os.synchronizeratingbot.core.channel.common.ports.repository.SaveUserRepository;
+import balashov.os.synchronizeratingbot.core.channel.common.ports.usecases.GetUserById;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

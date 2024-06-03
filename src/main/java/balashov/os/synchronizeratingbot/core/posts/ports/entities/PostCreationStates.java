@@ -16,7 +16,7 @@ public enum PostCreationStates implements CreationStates<PostCreationStates> {
             return Optional.of(ADD_CONTENT);
         }
     },
-    ADD_CONTENT  {
+    ADD_CONTENT {
         @Override
         public Optional<PostCreationStates> previous() {
             return Optional.of(CREATION_STARTED);

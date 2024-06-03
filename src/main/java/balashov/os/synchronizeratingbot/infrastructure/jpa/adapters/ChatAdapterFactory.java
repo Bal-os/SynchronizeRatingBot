@@ -1,9 +1,7 @@
 package balashov.os.synchronizeratingbot.infrastructure.jpa.adapters;
 
-import balashov.os.synchronizeratingbot.core.channel.common.ports.entities.ChatDto;
 import balashov.os.synchronizeratingbot.core.channel.common.ports.repository.SaveChatRepository;
 import balashov.os.synchronizeratingbot.core.channel.common.ports.usecases.GetChatById;
-import balashov.os.synchronizeratingbot.infrastructure.jpa.entities.ChatEntity;
 import balashov.os.synchronizeratingbot.infrastructure.jpa.mappers.ChatMapper;
 import balashov.os.synchronizeratingbot.infrastructure.jpa.repositories.ChatRepository;
 import lombok.RequiredArgsConstructor;

@@ -34,7 +34,7 @@ public class TelegramListenersFactory {
     }
 
     @Bean
-    public LongPollingSingleThreadUpdateConsumer dispatcher (List<UpdateHandler> updateHandlers) {
+    public LongPollingSingleThreadUpdateConsumer dispatcher(List<UpdateHandler> updateHandlers) {
         return (update) -> updateHandlers.stream()
                 .filter(handler -> handler.canHandle(update))
                 .findFirst()

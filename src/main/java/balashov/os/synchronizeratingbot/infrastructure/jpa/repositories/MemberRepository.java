@@ -17,10 +17,15 @@ import java.util.Optional;
 @Repository
 public interface MemberRepository extends JpaRepository<MemberEntity, Long> {
     List<MemberEntity> findAllByUser(UserEntity user);
+
     List<MemberEntity> findByUserAndStatusIn(UserEntity user, List<MemberStatuses> statuses);
+
     List<MemberEntity> findByChatAndStatusIn(ChatEntity chat, List<MemberStatuses> statuses);
+
     Optional<MemberEntity> findByChatAndUserAndStatus(ChatEntity chat, UserEntity user, MemberStatuses status);
+
     Optional<MemberEntity> findByChatAndUser(ChatEntity chat, UserEntity user);
+
     Optional<MemberEntity> findByChatAndUserAndStatusIn(ChatEntity chat, UserEntity user, List<MemberStatuses> statuses);
 
     @Modifying

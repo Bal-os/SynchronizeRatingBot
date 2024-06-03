@@ -4,8 +4,8 @@ import balashov.os.synchronizeratingbot.core.channel.common.ports.entities.ChatD
 import balashov.os.synchronizeratingbot.core.channel.common.ports.entities.UserDto;
 import balashov.os.synchronizeratingbot.core.channel.memberstatus.ports.entities.MemberStatuses;
 import balashov.os.synchronizeratingbot.core.channel.memberstatus.ports.repossitories.SaveUserStatusRepository;
-import balashov.os.synchronizeratingbot.core.channel.memberstatus.ports.usecases.GetUserStatus;
 import balashov.os.synchronizeratingbot.core.channel.memberstatus.ports.repossitories.UpdateUserStatusRepository;
+import balashov.os.synchronizeratingbot.core.channel.memberstatus.ports.usecases.GetUserStatus;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +13,7 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-public class  GetUserStatusService implements GetUserStatus {
+public class GetUserStatusService implements GetUserStatus {
     private final GetUserStatus getSavedUserStatus;
     private final GetUserStatus getUserStatusProvider;
     private final UpdateUserStatusRepository updateStatus;

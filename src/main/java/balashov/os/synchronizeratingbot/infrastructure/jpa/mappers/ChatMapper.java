@@ -7,5 +7,6 @@ import org.mapstruct.Mapper;
 @Mapper(componentModel = "spring")
 public interface ChatMapper {
     ChatDto mapToDto(ChatEntity chatEntity);
+
     ChatEntity mapToEntity(ChatDto chatDto);
 }

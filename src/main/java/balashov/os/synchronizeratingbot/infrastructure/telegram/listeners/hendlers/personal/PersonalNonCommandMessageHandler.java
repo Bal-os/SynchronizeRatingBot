@@ -1,6 +1,5 @@
 package balashov.os.synchronizeratingbot.infrastructure.telegram.listeners.hendlers.personal;
 
-import balashov.os.synchronizeratingbot.infrastructure.telegram.listeners.hendlers.MessageHandler;
 import org.telegram.telegrambots.meta.api.objects.Update;
 
 public interface PersonalNonCommandMessageHandler extends PersonalMessageHandler {

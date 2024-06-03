@@ -1,8 +1,8 @@
 package balashov.os.synchronizeratingbot.core.channel.common.ports.usecases;
 
 import balashov.os.synchronizeratingbot.core.channel.common.ports.entities.ChatDto;
-import balashov.os.synchronizeratingbot.core.channel.common.ports.entities.UserDto;
 import balashov.os.synchronizeratingbot.core.channel.common.ports.entities.MemberDto;
+import balashov.os.synchronizeratingbot.core.channel.common.ports.entities.UserDto;
 
 import java.util.Optional;
 

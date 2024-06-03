@@ -53,9 +53,9 @@ public class PostCreationStateMachine extends AbstractCreateStateMachine<PostCre
     public void addRating(boolean isRating) {
         if (isRating) {
             var rating = Rating.builder()
-                            .likes(0)
-                            .dislikes(0)
-                            .build();
+                    .likes(0)
+                    .dislikes(0)
+                    .build();
             builder.rating(rating);
         }
         transitionToNextState();

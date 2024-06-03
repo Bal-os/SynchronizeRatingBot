@@ -14,5 +14,5 @@ public enum ContentTypes implements ContentType {
         public ContentType getType() {
             return EVENT_POST;
         }
-    };
+    }
 }

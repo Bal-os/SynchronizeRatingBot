@@ -1,7 +1,6 @@
 package balashov.os.synchronizeratingbot.core.channel.common.ports.entities;
 
 import lombok.Builder;
-import lombok.Getter;
 
 import java.util.List;
 
@@ -12,4 +11,5 @@ public record UserDto(Long id,
                       String lastName,
                       String languageCode,
                       Boolean isBot,
-                      List<PhotoDto> profilePhotos) {}
+                      List<PhotoDto> profilePhotos) {
+}

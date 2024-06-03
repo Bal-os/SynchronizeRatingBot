@@ -38,7 +38,7 @@ public class ChannelAdaptersFactory {
     @Bean
     public GetPhotoById getPhotoByIdProvider(TelegramPhotoMapper mapper) {
         return photoId -> Optional.ofNullable(GetFile.builder().fileId(photoId).build())
-                    .map(telegramClient::execute)
-                    .map(mapper::toDto);
+                .map(telegramClient::execute)
+                .map(mapper::toDto);
     }
 }

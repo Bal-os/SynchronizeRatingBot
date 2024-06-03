@@ -2,11 +2,11 @@ package balashov.os.synchronizeratingbot.core.events.organizers.application;
 
 import balashov.os.synchronizeratingbot.core.channel.common.ports.entities.ChatDto;
 import balashov.os.synchronizeratingbot.core.channel.common.ports.entities.UserDto;
-import balashov.os.synchronizeratingbot.core.events.organizers.ports.entities.OrganizerDto;
-import balashov.os.synchronizeratingbot.core.events.organizers.ports.usecases.CreateOrganizer;
-import balashov.os.synchronizeratingbot.core.events.organizers.ports.entities.OrganizerCreationStates;
 import balashov.os.synchronizeratingbot.core.creationstates.AbstractCreateStateMachine;
 import balashov.os.synchronizeratingbot.core.creationstates.CreationStates;
+import balashov.os.synchronizeratingbot.core.events.organizers.ports.entities.OrganizerCreationStates;
+import balashov.os.synchronizeratingbot.core.events.organizers.ports.entities.OrganizerDto;
+import balashov.os.synchronizeratingbot.core.events.organizers.ports.usecases.CreateOrganizer;
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Service;
 

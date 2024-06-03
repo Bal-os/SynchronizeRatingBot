@@ -6,7 +6,6 @@ import lombok.Setter;
 
 import java.util.Optional;
 import java.util.function.Function;
-import java.util.function.Supplier;
 
 @Getter
 @Setter(AccessLevel.PROTECTED)
@@ -24,6 +23,6 @@ public abstract class AbstractCreateStateMachine<T extends CreationStates<T>> im
     }
 
     protected void transition(Function<T, Optional<T>> func) {
-       func.apply(currentState).ifPresent(this::setCurrentState);
+        func.apply(currentState).ifPresent(this::setCurrentState);
     }
 }

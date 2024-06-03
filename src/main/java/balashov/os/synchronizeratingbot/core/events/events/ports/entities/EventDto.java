@@ -1,10 +1,9 @@
 package balashov.os.synchronizeratingbot.core.events.events.ports.entities;
 
 import balashov.os.synchronizeratingbot.core.channel.common.ports.entities.PhotoDto;
-import balashov.os.synchronizeratingbot.core.events.organizers.ports.entities.OrganizerDto;
 import balashov.os.synchronizeratingbot.core.events.locations.ports.entities.LocationDto;
+import balashov.os.synchronizeratingbot.core.events.organizers.ports.entities.OrganizerDto;
 import lombok.Builder;
-import lombok.Getter;
 import lombok.Singular;
 
 import java.time.LocalDate;

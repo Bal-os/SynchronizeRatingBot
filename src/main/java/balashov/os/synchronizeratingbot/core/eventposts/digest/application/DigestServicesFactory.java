@@ -9,11 +9,13 @@ import org.springframework.context.annotation.Configuration;
 public class DigestServicesFactory {
     @Bean
     public AddEventToDigest addEventToDigest() {
-        return new AddEventToDigest() {};
+        return new AddEventToDigest() {
+        };
     }
 
     @Bean
     public RemoveEventFromDigest removeEventFromDigest() {
-        return new RemoveEventFromDigest() {};
+        return new RemoveEventFromDigest() {
+        };
     }
 }

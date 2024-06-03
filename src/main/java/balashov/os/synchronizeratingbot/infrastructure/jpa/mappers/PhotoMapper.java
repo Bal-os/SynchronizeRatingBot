@@ -7,5 +7,6 @@ import org.mapstruct.Mapper;
 @Mapper(componentModel = "spring")
 public interface PhotoMapper {
     PhotoDto mapToDto(PhotoEntity photoEntity);
+
     PhotoEntity mapToEntity(PhotoDto photoDto);
 }

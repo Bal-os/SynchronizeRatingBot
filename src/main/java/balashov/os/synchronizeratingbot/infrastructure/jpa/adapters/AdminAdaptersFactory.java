@@ -1,9 +1,9 @@
 package balashov.os.synchronizeratingbot.infrastructure.jpa.adapters;
 
+import balashov.os.synchronizeratingbot.core.channel.memberstatus.ports.entities.MemberStatuses;
 import balashov.os.synchronizeratingbot.core.channel.memberstatus.ports.usecases.CheckAdminRole;
 import balashov.os.synchronizeratingbot.core.channel.memberstatus.ports.usecases.GetAdministeredChats;
 import balashov.os.synchronizeratingbot.core.channel.memberstatus.ports.usecases.GetChatAdmins;
-import balashov.os.synchronizeratingbot.core.channel.memberstatus.ports.entities.MemberStatuses;
 import balashov.os.synchronizeratingbot.infrastructure.jpa.entities.MemberEntity;
 import balashov.os.synchronizeratingbot.infrastructure.jpa.mappers.ChatMapper;
 import balashov.os.synchronizeratingbot.infrastructure.jpa.mappers.MemberMapper;

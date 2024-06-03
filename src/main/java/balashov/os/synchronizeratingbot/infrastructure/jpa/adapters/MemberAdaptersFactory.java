@@ -1,12 +1,12 @@
 package balashov.os.synchronizeratingbot.infrastructure.jpa.adapters;
 
-import balashov.os.synchronizeratingbot.core.channel.memberstatus.ports.entities.MemberStatuses;
 import balashov.os.synchronizeratingbot.core.channel.common.ports.repository.SaveMemberRepository;
-import balashov.os.synchronizeratingbot.core.channel.memberstatus.ports.repossitories.SaveUserStatusRepository;
-import balashov.os.synchronizeratingbot.core.channel.memberstatus.ports.usecases.CheckChatMembership;
 import balashov.os.synchronizeratingbot.core.channel.common.ports.usecases.GetMember;
-import balashov.os.synchronizeratingbot.core.channel.memberstatus.ports.usecases.GetUserStatus;
+import balashov.os.synchronizeratingbot.core.channel.memberstatus.ports.entities.MemberStatuses;
+import balashov.os.synchronizeratingbot.core.channel.memberstatus.ports.repossitories.SaveUserStatusRepository;
 import balashov.os.synchronizeratingbot.core.channel.memberstatus.ports.repossitories.UpdateUserStatusRepository;
+import balashov.os.synchronizeratingbot.core.channel.memberstatus.ports.usecases.CheckChatMembership;
+import balashov.os.synchronizeratingbot.core.channel.memberstatus.ports.usecases.GetUserStatus;
 import balashov.os.synchronizeratingbot.infrastructure.jpa.entities.MemberEntity;
 import balashov.os.synchronizeratingbot.infrastructure.jpa.mappers.ChatMapper;
 import balashov.os.synchronizeratingbot.infrastructure.jpa.mappers.MemberMapper;
