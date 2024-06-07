@@ -1,6 +1,6 @@
 package balashov.os.synchronizeratingbot.core.events.organizers.ports.entities;
 
-import balashov.os.synchronizeratingbot.core.creationstates.CreationStates;
+import balashov.os.synchronizeratingbot.core.common.creationstates.ports.CreationStates;
 
 import java.util.Optional;
 

@@ -1,11 +1,11 @@
 package balashov.os.synchronizeratingbot.core.posts.ports.entities;
 
-import balashov.os.synchronizeratingbot.core.creationstates.CreationStates;
+import balashov.os.synchronizeratingbot.core.common.creationstates.ports.CreationStates;
 
 import java.util.Optional;
 
 public enum PostCreationStates implements CreationStates<PostCreationStates> {
-    CREATION_STARTED {
+    START {
         @Override
         public boolean isInitial() {
             return true;
@@ -19,7 +19,7 @@ public enum PostCreationStates implements CreationStates<PostCreationStates> {
     ADD_CONTENT {
         @Override
         public Optional<PostCreationStates> previous() {
-            return Optional.of(CREATION_STARTED);
+            return Optional.of(START);
         }
 
         @Override
@@ -53,6 +53,17 @@ public enum PostCreationStates implements CreationStates<PostCreationStates> {
         @Override
         public Optional<PostCreationStates> previous() {
             return Optional.of(ADD_RATING);
+        }
+
+        @Override
+        public Optional<PostCreationStates> next() {
+            return Optional.of(CONFIRMATION);
+        }
+    },
+    CONFIRMATION {
+        @Override
+        public Optional<PostCreationStates> previous() {
+            return Optional.of(SCHEDULE_PUBLICATION);
         }
 
         @Override

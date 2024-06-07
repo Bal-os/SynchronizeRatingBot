@@ -1,7 +1,7 @@
 package balashov.os.synchronizeratingbot.core.posts.ports.usecases;
 
-import balashov.os.synchronizeratingbot.core.posts.ports.entities.Post;
+import balashov.os.synchronizeratingbot.core.posts.ports.entities.PostDto;
 
 public interface CreatePostScheduler {
-    void schedulePost(Post post);
+    void schedulePost(PostDto post);
 }
